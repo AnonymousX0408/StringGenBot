@@ -156,7 +156,7 @@ async def gen_session(
     try:
         otp = await Anony.ask(
             identifier=(message.chat.id, user_id, None),
-            text=f"ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ᴏᴛᴘ sᴇɴᴛ ᴛᴏ {phone_number}.\n\nɪғ ᴏᴛᴩ ɪs <code>12345</code>, ᴩʟᴇᴀsᴇ sᴇɴᴅ ɪᴛ ᴀs <code>1 2 3 4 5.</code>",
+            text=f"💞 ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ᴏᴛᴘ sᴇɴᴛ ᴛᴏ {phone_number}.\n\nɪғ ᴏᴛᴩ ɪs <code>12345</code>, ᴩʟᴇᴀsᴇ sᴇɴᴅ ɪᴛ ᴀs <code>1 2 3 4 5.</code>",
             filters=filters.text,
             timeout=600,
         )
@@ -239,19 +239,19 @@ async def gen_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat("Privates_RoBot")
+            await client.join_chat("ProCoderZBots")
     except KeyError:
         pass
     try:
         await client.disconnect()
         await Anony.send_message(
             chat_id=user_id,
-            text=f"sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ <a href={SUPPORT_CHAT}>ᴘʀɪᴠᴀᴛᴇꜱ ʀᴏʙᴏᴛ</a>.",
+            text=f"sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ <a href={SUPPORT_CHAT}>ᴘʀᴏᴄᴏᴅᴇʀᴢ ʙᴏᴛꜱ</a>.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs",
+                            text="❤️ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs",
                             url=f"tg://openmessage?user_id={user_id}",
                         )
                     ]
